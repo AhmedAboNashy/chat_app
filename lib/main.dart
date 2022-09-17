@@ -1,4 +1,4 @@
-import 'package:chat_app/home_screen.dart';
+import 'package:chat_app/register_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,8 +12,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      routes: {HomeScreen.routeName: (_) => HomeScreen()},
-      initialRoute: HomeScreen.routeName,
+      debugShowCheckedModeBanner: false,
+      routes: {RegisterScreen.routeName: (_) => RegisterScreen()},
+      initialRoute: RegisterScreen.routeName,
     );
   }
 }
